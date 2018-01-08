@@ -1,0 +1,27 @@
+{
+  "name": "assignment1",
+  "version": "1.0.0",
+  "description": "assignment1",
+  "main": "index.js",
+  "scripts": {
+    "start":"npm run lite",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lite":"lite-server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/verdu89/fullstack-assignment1.git"
+  },
+  "author": "verdu89",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/verdu89/fullstack-assignment1/issues"
+  },
+  "homepage": "https://github.com/verdu89/fullstack-assignment1#readme",
+  "devDependencies": {
+    "lite-server": "^2.3.0"
+  },
+  "dependencies": {
+    "bootstrap": "^4.0.0-alpha.6"
+  }
+}
