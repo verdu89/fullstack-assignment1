@@ -31,3 +31,6 @@ body {
 .navbar-inverse {
 	background-color: black;
 }
+.card-block {
+	margin: 60px;
+}
