@@ -46,13 +46,17 @@
     <header class="jumbotron">
         <div class="container">
             <div class="row row-header">
-                <div class="col-12 col-sm-8 ">
+                <div class="col-12 col-sm-7 ">
                     <h1>Ristorante con Fusion</h1>
                     <p>We take inspiration from the World's best cuisines, and create a unique fusion experience. Our lipsmacking creations will tickle your culinary senses!</p>
                 </div>
-                <div class="col col-sm align-self-center ">
+                <div class="col-3 col-sm align-self-center ">
                     <img src="img/logo.png" class="image-fluid">
 
+                </div>
+                <div class="col-xs-12 col-sm-2">
+                    
+                    <a style="margin-top:40px;" type="button" href="#tableReserveForm" class="btn btn-warning btn-block">Reserve Table</a>
                 </div>
             </div>
         </div>
@@ -113,7 +117,7 @@
                    <div class="media-body"> 
                         <h2>Alberto Somayya</h2>
                         <h4>Executive Chef</h4>
-                        <p>Award winning three-star Michelin chef with wide International experience having worked closely with whos-who in the culinary world, he specializes in creating mouthwatering Indo-Italian fusion experiences. </p>
+                        <p class="hidden-sm-down">Award winning three-star Michelin chef with wide International experience having worked closely with whos-who in the culinary world, he specializes in creating mouthwatering Indo-Italian fusion experiences. </p>
                     </div>
                 </div>
             </div>
@@ -121,13 +125,13 @@
     </div>
 <div class="container">
     <div class="row-content aling-items-center ">
-        <div class="col-12">
+        <div class="col-12 col-md-9 offset-md-1">
             <div class="card">
                 <h3 class="card-header bg-warning text-white">Reserve a Table</h3>
                 <div class="card-block">
 
-<form class="form form-group">
- <div class="row" id="reserveTableForm">
+<form class="form form-group" id="form">
+ <div class="row" id="tableReserveForm">
    
     <label class="form-group col-sm-12 col-md-3" for="seats">Number of Guests</label> <label class="radio-inline">
             <input type="radio" name="seats" value="1">1
@@ -152,32 +156,29 @@
 
     
 
-        <div class="form-group form-inline">
-                        <label class="control-label col-sm-2 col-md-3" for="dateTime">Date and Time</label>
-                        <div class="col-sm-3">
-                            <input type="date" class="form-control" name="date"><span class="glyphicon glyphicon-calendar form-control-feedback"></span>
+        <div class="form-group form-horizontal">
+            <div class="row">
+                    
+                        <label class=" col-sm-12 col-md-2" for="dateTime">Date and Time</label>
+                        <div class="col-sm-4">
+                            <input type="date" class="form-control fa fa-calendar-o" name="date" >                    
+
                         </div>
-                        <div class="col-sm-3">
-                            <input type="time" class="form-control" name="time"><span class="glyphicon glyphicon-time form-control-feedback"></span>
-                        </div>
-                    </div>
-
-                    <div class="form-group">
-                        <div class="col-sm-offset-2 col-sm-1"> <button type="submit" class="btn btn-primary">Reserve!</button>
-                        </div>
-                    </div>
 
 
-
-
-</form>
-           
-
+                
+                        <div class="col-sm-4">
+                            <input type="time" class="form-control fa fa-clock-o" name="time">
+                        </div>                     
+            </div>  
+        </div> 
+                    </form>
                 </div>
             </div>
          </div>
     </div>
 </div>
+
 
                 
                            
