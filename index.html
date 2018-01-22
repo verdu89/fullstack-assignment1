@@ -46,7 +46,7 @@
     <header class="jumbotron">
         <div class="container">
             <div class="row row-header">
-                <div class="col-12 col-sm-7 ">
+                <div class="col-12 col-sm-6 ">
                     <h1>Ristorante con Fusion</h1>
                     <p>We take inspiration from the World's best cuisines, and create a unique fusion experience. Our lipsmacking creations will tickle your culinary senses!</p>
                 </div>
@@ -54,9 +54,9 @@
                     <img src="img/logo.png" class="image-fluid">
 
                 </div>
-                <div class="col-xs-12 col-sm-2">
+                <div class="col-xs-12 col-sm-2 ">
                     
-                    <a style="margin-top:40px;" type="button" href="#tableReserveForm" class="btn btn-warning btn-block">Reserve Table</a>
+                    <a style="margin-top:40px;" type="button" href="#tableReserveForm" class="btn btn-sm btn-warning">Reserve Table</a>
                 </div>
             </div>
         </div>
@@ -133,45 +133,46 @@
 <form class="form form-group" id="form">
  <div class="row" id="tableReserveForm">
    
-    <label class="form-group col-sm-12 col-md-3" for="seats">Number of Guests</label> <label class="radio-inline">
-            <input type="radio" name="seats" value="1">1
+    <label class="form-group col-sm-12 col-md-3" for="posti">Number of Guests</label> <label class="radio-inline">
+            <input type="radio" name="posti" value="1">1
         </label>
         <label class="radio-inline">
-            <input type="radio" name="seats" value="2">2
+            <input type="radio" name="posti" value="2">2
         </label>
         <label class="radio-inline">
-            <input type="radio" name="seats" value="3">3
+            <input type="radio" name="posti" value="3">3
         </label>
         <label class="radio-inline">
-            <input type="radio" name="seats" value="4">4
+            <input type="radio" name="posti" value="4">4
         </label>
         <label class="radio-inline">
-            <input type="radio" name="seats" value="5">5
+            <input type="radio" name="posti" value="5">5
         </label>
         <label class="radio-inline">
-            <input type="radio" name="seats" value="6">6
+            <input type="radio" name="posti" value="6">6
         </label>
     
-   </div>
+   </div>  
 
-    
+     <div class="form-group form-inline has-feedback">
+                    <label class="col-sm-2 control-label">Date and time</label>
+                    <div class="col-sm-5">
+                        <input type="date" class="form-control" id="date" name="date" placeholder="Date">
+                        
+                    </div>
 
-        <div class="form-group form-horizontal">
-            <div class="row">
-                    
-                        <label class=" col-sm-12 col-md-2" for="dateTime">Date and Time</label>
-                        <div class="col-sm-4">
-                            <input type="date" class="form-control fa fa-calendar-o" name="date" >                    
+                    <div class="col-sm-5">
+                        <input type="time" class="form-control" id="time" name="time" placeholder="Time">
+                        
+                    </div>
+                </div>
 
-                        </div>
-
-
-                
-                        <div class="col-sm-4">
-                            <input type="time" class="form-control fa fa-clock-o" name="time">
-                        </div>                     
-            </div>  
-        </div> 
+                <div class="form-group">
+                    <div class="col-sm-offset-2 col-sm-10">
+                        <button type="submit" class="btn btn-primary">Reserve</button>
+                    </div>
+                </div>
+            </form>
                     </form>
                 </div>
             </div>
@@ -181,7 +182,8 @@
 
 
                 
-                           
+                        
+
 
     <footer class="footer">
         <div class="container">
