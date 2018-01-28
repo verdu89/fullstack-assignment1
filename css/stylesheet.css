@@ -34,3 +34,12 @@ body {
 .card-block {
 	margin: 60px;
 }
+.tab-content {
+    border-left: 1px solid #ddd;
+    border-right: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+    padding: 50px;
+}
+#corporate {
+	padding: 0px 50px 0px 50px;
+}
